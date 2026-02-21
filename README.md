@@ -87,6 +87,6 @@ npm run dev
 | `npm run dev:server` | Starts the Node backend with `--watch` mode. |
 | `npm run build` | Builds the frontend for production. |
 | `npm run preview` | Previews the production build locally. |
-project video
 
+project video
 https://drive.google.com/file/d/12J7cop_eEYe03YrGaVk9ZK5gX-c2Naiq/view?usp=sharing
