@@ -1,92 +1,91 @@
-# MedRemind
+ Project Description
 
-**MedRemind** is an elderly-friendly medication reminder web application designed to help users manage their prescriptions and never miss a dose. It features a robust full-stack architecture with built-in notification capabilities.
+MedRemind – “Never Miss a Dose, Stay in Control.”
 
-**Created by:** Elizabeth Shiju and Shreya S
+MedRemind is a notification-driven smart medicine reminder and overdose prevention website designed to support elderly people in taking their medicines safely and on time.
 
----
+The system is activated when the user clicks the medicine-time notification, which opens the website and dynamically checks whether the current time falls within the valid dosage window. It then enables the user to confirm medicine intake either manually or through AI-based pill verification.
 
-## 🚀 Features
+The application continuously tracks the number of doses taken per day. If the intake exceeds the prescribed limit, a Malayalam warning is displayed and an automatic call is placed to the caregiver for immediate assistance.
 
-* **Elderly-Friendly UI**: Designed with simplicity and accessibility in mind.
-* **Automated Reminders**: Integrated with **Twilio** for SMS/Voice and **Nodemailer** for email alerts.
-* **AI Integration**: Utilizes the **GROQ SDK** for advanced processing or interaction.
-* **Secure Auth**: User authentication powered by **JSON Web Tokens (JWT)** and **bcryptjs**.
-* **Lightweight Database**: Uses **better-sqlite3** for efficient local data storage.
-* **Concurrent Execution**: Runs both the client and server simultaneously using a single command.
+The entire system is designed with a simple, login-free interface, large buttons, voice support, and offline functionality to ensure accessibility for elderly users and reliability in low-connectivity environments.
 
----
+🛠 Tech Stack
+Frontend
 
-## 🛠️ Tech Stack
+React.js
 
-### Frontend
+Tailwind CSS
 
-* **React 18**: Core UI library.
-* **Vite**: Fast build tool and development server.
-* **React Router DOM**: Client-side routing management.
+JavaScript
 
-### Backend
+Browser APIs
 
-* **Node.js & Express**: Server framework.
-* **Better-SQLite3**: Fast SQLite3 driver for local storage.
-* **Node-Cron**: Task scheduling for medication alerts.
-* **Axios**: Promise-based HTTP client for API requests.
+Web Notifications API
 
----
+Speech Synthesis API (Malayalam voice alerts)
 
-## 📦 Getting Started
+MediaDevices API (Camera access)
 
-### Prerequisites
+Storage
 
-* Node.js (latest LTS recommended)
-* npm
+localStorage (for offline data persistence)
 
-### Installation
+AI Integration
 
-1. Clone the repository.
-2. Install dependencies for both client and server:
-```bash
+Client-side pill detection using camera input
+
+ Features
+
+ Notification-based medicine reminder
+
+ Elderly-friendly login-free interface
+
+ Time-window validation for delayed access
+
+ Manual medicine intake confirmation
+
+ AI-based pill verification using camera
+
+ Overdose detection and prevention
+
+ Automatic caregiver calling during emergency
+
+ SOS emergency support
+
+ Offline working using localStorage
+
+ One-time setup for medicine schedule and caregiver number
+
+ Malayalam voice guidance
+ Getting Started
+
+
+ Installation Commands
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/medremind.git
+
+# 2️⃣ Go into the project folder
+cd medremind
+
+# 3️⃣ Install all dependencies
 npm install
 
-```
+▶️ Run Commands
+🔹 Start the development server
+npm start
 
+Use:
 
-
-### Environment Setup
-
-Create a `.env` file in the root directory and configure your credentials (required for Twilio, Nodemailer, and GROQ).
-
-### Running the Application
-
-You can run both the frontend and the backend concurrently using the following command:
-
-```bash
 npm run dev
 
-```
+Then open:
 
-* **Frontend**: Runs on [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173).
-* **Backend**: Runs on [http://localhost:3001](https://www.google.com/search?q=http://localhost:3001) (Proxied via Vite).
-
----
-
-## 🏗️ Project Structure
-
-* `server/index.js`: Main entry point for the Express backend.
-* `vite.config.js`: Configuration for the Vite build tool and API proxying.
-* `package.json`: Project metadata and dependency management.
-
----
-
-## 📜 Available Scripts
-
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Starts both the Vite dev server and the Node backend concurrently. |
-| `npm run dev:client` | Starts only the Vite frontend. |
-| `npm run dev:server` | Starts the Node backend with `--watch` mode. |
-| `npm run build` | Builds the frontend for production. |
-| `npm run preview` | Previews the production build locally. |
+http://localhost:5173
+Screenshots
+<img width="1920" height="1020" alt="Screenshot 2026-02-21 091130" src="https://github.com/user-attachments/assets/260b4c01-07b0-4711-b163-191176aa1b4e" />
+<img width="1920" height="1020" alt="Screenshot 2026-02-21 091057" src="https://github.com/user-attachments/assets/50d90bcb-543a-4dc2-aa55-8c8687f87a68" />
+<img width="1920" height="1020" alt="Screenshot 2026-02-21 091038" src="https://github.com/user-attachments/assets/630a085e-d2be-4e78-8e65-4e1bbb629ae0" />
 
 project video
 https://drive.google.com/file/d/12J7cop_eEYe03YrGaVk9ZK5gX-c2Naiq/view?usp=sharing
