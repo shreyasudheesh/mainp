@@ -10,7 +10,7 @@ The application continuously tracks the number of doses taken per day. If the in
 
 The entire system is designed with a simple, login-free interface, large buttons, voice support, and offline functionality to ensure accessibility for elderly users and reliability in low-connectivity environments.
 
-🛠 Tech Stack
+Tech Stack
 Frontend
 
 React.js
@@ -83,6 +83,8 @@ Then open:
 
 http://localhost:5173
 Screenshots
+
+
 <img width="1920" height="1020" alt="Screenshot 2026-02-21 091130" src="https://github.com/user-attachments/assets/260b4c01-07b0-4711-b163-191176aa1b4e" />
 <img width="1920" height="1020" alt="Screenshot 2026-02-21 091038" src="https://github.com/user-attachments/assets/630a085e-d2be-4e78-8e65-4e1bbb629ae0" />
 <img width="1920" height="1020" alt="Screenshot 2026-02-21 091057" src="https://github.com/user-attachments/assets/50d90bcb-543a-4dc2-aa55-8c8687f87a68" />
@@ -161,9 +163,9 @@ Purpose:
 
 3. MediaDevices API (Camera Access)
 Used for AI-based pill verification.
-
 Method Used:
-```js
+``js
+
 Team Members
 1.Elizabeth Shiju
 2.Shreya S
