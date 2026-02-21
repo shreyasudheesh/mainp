@@ -84,8 +84,48 @@ Then open:
 http://localhost:5173
 Screenshots
 <img width="1920" height="1020" alt="Screenshot 2026-02-21 091130" src="https://github.com/user-attachments/assets/260b4c01-07b0-4711-b163-191176aa1b4e" />
-<img width="1920" height="1020" alt="Screenshot 2026-02-21 091057" src="https://github.com/user-attachments/assets/50d90bcb-543a-4dc2-aa55-8c8687f87a68" />
 <img width="1920" height="1020" alt="Screenshot 2026-02-21 091038" src="https://github.com/user-attachments/assets/630a085e-d2be-4e78-8e65-4e1bbb629ae0" />
+<img width="1920" height="1020" alt="Screenshot 2026-02-21 091057" src="https://github.com/user-attachments/assets/50d90bcb-543a-4dc2-aa55-8c8687f87a68" />
 
 project video
 https://drive.google.com/file/d/12J7cop_eEYe03YrGaVk9ZK5gX-c2Naiq/view?usp=sharing
+
+Architecture Diagram
+
+
+ API Documentation
+
+This project does not use a custom backend API.
+
+MedRemind is an offline-first frontend application that uses browser-provided APIs for its core functionality.
+
+ Browser APIs Used
+
+ 1. Web Notifications API
+Used to trigger medicine-time reminders that open the website when clicked.
+
+Purpose:
+- Notify the user at scheduled medicine time.
+
+ 2. Speech Synthesis API
+Used to provide Malayalam voice guidance for elderly users.
+
+Purpose:
+- Voice reminder for medicine intake
+- Emergency warning voice alert
+
+3. MediaDevices API (Camera Access)
+Used for AI-based pill verification.
+
+Method Used:
+```js
+Team Members
+1.Elizabeth Shiju
+2.Shreya S
+License
+
+This project is licensed under the MIT License.
+
+You are free to use, modify, and distribute this software with proper attribution.
+
+See the LICENSE file for more details.
