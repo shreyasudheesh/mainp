@@ -91,7 +91,52 @@ project video
 https://drive.google.com/file/d/12J7cop_eEYe03YrGaVk9ZK5gX-c2Naiq/view?usp=sharing
 
 Architecture Diagram
+Architecture
 
+MedRemind
+├── User Interface
+│   ├── Home Page
+│   │   ├── Medicine Reminder Cards
+│   │   ├── Add Medicine Option
+│   │   └── Scan Medicine Option
+│   │
+│   ├── Add Medicine Page
+│   │   ├── Medicine Name Input
+│   │   ├── Medicine Time Input
+│   │   └── Allowed Dose Input
+│   │
+│   └── Camera Scan Interface
+│
+├── Application Logic
+│   ├── Medicine Management Module
+│   │   ├── Add New Medicine
+│   │   └── Store Medicine Schedule
+│   │
+│   ├── Reminder Display Engine
+│   │   └── Generate Flashcard Reminders
+│   │
+│   ├── Time Validation Engine
+│   │   └── Check Current Time with Medicine Time
+│   │
+│   ├── Dose Tracking System
+│   │   ├── Update Taken Count
+│   │   └── Compare with Allowed Dose
+│   │
+│   └── Medicine Verification Module
+│       └── Camera Based Pill Detection
+│
+├── Data Layer
+│   └── Local Storage
+│       ├── Medicine Details
+│       ├── Dosage Limit
+│       ├── Daily Taken Count
+│       └── Caregiver Number
+│
+└── Device Services
+    ├── Notification Alarm
+    ├── Camera Access
+    ├── Speech Alert
+    └── Phone Call Trigger
 
  API Documentation
 
