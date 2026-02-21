@@ -1,0 +1,17 @@
+# ============================================
+# MedRemind - Project Requirements
+# ============================================
+# This project is built entirely in JavaScript (Node.js + React).
+# Dependencies are managed via npm (see package.json).
+#
+# To install all dependencies, run:
+#   npm install
+#
+# To start the app (both frontend + backend), run:
+#   npm run dev
+#
+# ============================================
+# Python Dependencies (if needed in future)
+# ============================================
+# Currently none - this is a pure JavaScript project.
+# If you add Python-based services later, list them below.
